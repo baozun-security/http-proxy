@@ -31,6 +31,7 @@ func Run() error {
 	if nil != err {
 		return fmt.Errorf("failed get listen addr, err:%s", err.Error())
 	}
+	log.Info(fmt.Sprintf("start proxy server, listen:%s", addr))
 	go tryDisConn()       // 优雅退出
 	return listening(lis) // 持续监听TCP连接请求
 }

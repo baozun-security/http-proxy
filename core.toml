@@ -16,5 +16,5 @@ Format = "text"
 
 [server]
 Port = 5678 # 代理监听端口
-MaxWorkers = 3 # 协程工作者数
-MaxJobQueue = 10 # 工作队列大小
+MaxWorkers = 300 # 协程工作者数
+MaxJobQueue = 100 # 工作队列大小
