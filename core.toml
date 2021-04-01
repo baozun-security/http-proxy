@@ -1,0 +1,20 @@
+[log]
+# 日志路径，为空将输出控制台
+LogPath = ""
+# log level
+LogLevel  = "debug"
+# log size (M)
+MaxSize = 10
+# compress log
+Compress = true
+# log save  time (day)
+MaxAge =  7
+# save total log file total
+MaxBackups = 10
+# text or json output
+Format = "text"
+
+[server]
+Port = 5678 # 代理监听端口
+MaxWorkers = 3 # 协程工作者数
+MaxJobQueue = 10 # 工作队列大小
